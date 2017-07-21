@@ -1,0 +1,45 @@
+/*Import your fonts at the top*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:700|Playfair+Display:900');
+
+:root {
+
+    /*Base Website colors*/
+
+    /*Primary colors*/
+    --black:#000000;
+    --medium-black:#1D1E20;
+    --dark-gray: #48484C;
+    --light-gray: #A0A0A0;
+    --white:#ffffff;
+
+
+    /*Define grid stuff here for both mobile and desktop */
+
+    /*fonts*/
+    --primary-font: 'Playfair Display', serif;
+    --secondary-font: 'PT Sans', sans-serif;
+
+    /*Here we can start setting up our base margins and padding that we'll use throughout the website*/
+    /*This is really important because it will keep everything tight and aligned consistently */
+
+    /*Layout*/
+
+}
+
+html, body
+{
+    /*Add primary font to the html and body so that every element you that needs it can just inherit it*/
+    font-family: var(--secondary-font);
+    color: var(--white);
+}
+
+/*Remove ugly default border and background from buttons*/
+button {
+    border:none;
+    background: none;
+}
+
+/*Remove gross default  blue/orange outline on button click */
+button:focus {
+    outline: none;
+}
